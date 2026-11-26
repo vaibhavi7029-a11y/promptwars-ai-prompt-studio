@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Analyze, improve and export better AI prompts with PromptWars AI Prompt Studio.">
+<title>PromptWars | AI Prompt Studio</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top"><div class="brand"><span class="mark">P</span><span>PromptWars <small>AI PROMPT STUDIO</small></span></div><span class="tag">Vibeathon 2026</span></header>
+<main>
+<section class="hero"><p class="eyebrow">THINK · PROMPT · BUILD</p><h1>Turn rough ideas into <em>powerful prompts.</em></h1><p class="sub">Analyze prompt quality, find missing details, and generate a structured prompt you can use with your favourite AI model.</p></section>
+<section class="workspace">
+<div class="panel"><div class="panel-head"><div><p class="eyebrow">01 / INPUT</p><h2>Your prompt</h2></div><span class="hint">Be specific. Iterate.</span></div>
+<label for="prompt">What do you want the AI to do?</label><textarea id="prompt" maxlength="12000" placeholder="Example: Create a 7-day beginner study plan for learning Python. I have 1 hour per day. Present it as a table with daily goals and practice tasks."></textarea>
+<div class="fields"><div><label for="goal">Desired outcome</label><input id="goal" value="Make the prompt clearer and more effective"></div><div><label for="audience">Target audience</label><input id="audience" value="General audience"></div><div><label for="tone">Tone</label><select id="tone"><option>Clear and professional</option><option>Friendly and simple</option><option>Technical and precise</option><option>Creative and engaging</option></select></div></div>
+<div class="actions"><button class="secondary" id="analyze">Analyze quality</button><button class="primary" id="optimize">✦ Optimize prompt</button></div><p id="status" class="status" role="status" aria-live="polite"></p></div>
+<div class="panel results"><div class="panel-head"><div><p class="eyebrow">02 / INSIGHTS</p><h2>Prompt score</h2></div><span class="score" id="score">—<small>/100</small></span></div><div class="meter"><div id="meter-fill"></div></div><div id="checks" class="checks"><p class="empty">Run an analysis to see your prompt strengths and gaps.</p></div><div class="suggestions"><h3>Ways to improve</h3><ul id="suggestions"><li>Suggestions will appear here.</li></ul></div></div>
+</section>
+<section class="panel output"><div class="panel-head"><div><p class="eyebrow">03 / RESULT</p><h2>Optimized prompt</h2></div><button class="secondary small" id="copy" disabled>Copy prompt</button></div><p id="mode" class="hint">Your optimized prompt will appear here.</p><pre id="output" aria-live="polite">Your improved prompt will appear here after you select “Optimize prompt”.</pre></section>
+<footer><span>PromptWars AI Prompt Studio</span><span>Built for responsible, human-guided AI use.</span></footer>
+</main><script src="/static/app.js"></script></body></html>
